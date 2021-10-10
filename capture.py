@@ -1,11 +1,13 @@
-import cv2, time, pandas
-from datetime import datetime
+import cv2#, time, pandas
+#from datetime import datetime
+#Working on implenting a system that records the timestamps of when a face is in the frame
+#unused imports and code is for implementing that system
 captureDevice = cv2.VideoCapture(0)
 check, frame=captureDevice.read()
 
 face_cascade=cv2.CascadeClassifier(r"C:\Users\ezrat\OneDrive\Documents\GitHub\Facial_Recognition\haarcascade_frontalface_default.xml")
 status=0
-status_list=[]
+#status_list=[]
 #times=[]
 #df=pandas.DataFrame(columns=["Start", "End"])
 while True:
